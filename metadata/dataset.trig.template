@@ -1,0 +1,24 @@
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix pmd:   <http://publishmydata.com/def/dataset#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gss-data.org.uk/graph/ons-provisional-long-term-international-migration-estimates/metadata> {
+  <http://gss-data.org.uk/data/ons-provisional-long-term-international-migration-estimates>
+        a                    pmd:LinkedDataset , pmd:Dataset , qb:DataSet ;
+        gdp:family           gdp:Migration ;
+        rdfs:label           "Provisional Long-Term International Migration estimates"@en ;
+        pmd:contactEmail     <mailto:migstatsunit@ons.gsi.gov.uk> ;
+        pmd:graph            <http://gss-data.org.uk/graph/ons-provisional-long-term-international-migration-estimates> ;
+        dct:creator          <https://www.gov.uk/government/organisations/office-for-national-statistics> ;
+        dct:issued           "${issued}"^^xsd:dateTime ;
+        dct:modified         "${modified}"^^xsd:dateTime ;
+        dct:license          <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
+        dct:creator          <https://www.gov.uk/government/organisations/office-for-national-statistics> ;
+        dct:references       <http://gss-data.org.uk/help> ;
+        dct:title            "Provisional Long-Term International Migration estimates"@en ;
+        qb:structure         <http://gss-data.org.uk/data/ons-trade-in-goods-mrets> ;
+        void:sparqlEndpoint  <http://gss-data.org.uk/sparql> .
+}
