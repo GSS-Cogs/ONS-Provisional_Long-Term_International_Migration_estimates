@@ -17,7 +17,6 @@ pipeline {
             }
             steps {
                 sh "jupyter-nbconvert --to python --stdout tidy.ipynb | python"
-                sh "jupyter-nbconvert --to python --stdout update_metadata.ipynb | python"
             }
         }
         stage('Upload draftset') {
